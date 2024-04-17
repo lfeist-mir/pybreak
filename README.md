@@ -3,10 +3,14 @@ Basically Breakout but coded with python library Pygame and a retro feel
 
 All graphic and musical assets have been crafted wy hand with love. You're free to use them in your project if you give me credit one way or another.
 
-## How to play
+## How to launch
 While in the folder, type in a terminal
 > pip install pygame
 > python main.py
+
+## How to play
+Spacebar to launch the ball
+Arrow keys to control the paddle
 
 ## Known bugs
 * Some corner collisions make the ball goes through the brick
