@@ -5,11 +5,11 @@ All graphic and musical assets have been crafted wy hand with love. You're free 
 
 ## How to launch
 While in the folder, type in a terminal
-> pip install pygame
+> pip install pygame  
 > python main.py
 
 ## How to play
-Spacebar to launch the ball
+Spacebar to launch the ball  
 Arrow keys to control the paddle
 
 ## Known bugs
