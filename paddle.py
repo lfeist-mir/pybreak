@@ -13,9 +13,11 @@ class Paddle():
         self.rect = (self.x, self.y, self.width, self.height)
         self.hitbox = pygame.Rect(self.rect)
         self.collide_countdown = 5
+        self.img = pygame.image.load('assets/paddle.png')
+        self.img = pygame.transform.scale(self.img, (self.width, self.height))
         
     def draw(self, window):
-        pygame.draw.rect(window,'darkturquoise', self.rect)
+        window.blit(self.img, (self.x,self.y))
         
     def move(self, direction):
         self.x += direction*self.vel

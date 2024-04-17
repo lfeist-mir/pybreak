@@ -16,11 +16,15 @@ class UI():
         self.right_wall_x = 27*self.block_size
         self.upper_wall_y = 3*self.block_size+1
         self.lower_wall_y = 37*self.block_size
-        self.img = pygame.image.load('assets/bg.png')
+        self.width = width
+        self.height = height
+        self.img = pygame.image.load('assets/bg_start.png')
         self.img = pygame.transform.scale(self.img, (width, height))
 
 
     def draw_background(self):
         self.window.blit(self.img, (0,0))   
 
-        
+    def set_img(self, img):
+        self.img = pygame.image.load(img)
+        self.img = pygame.transform.scale(self.img, (self.width, self.height))
